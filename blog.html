@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <title> University website design</title>  
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,300;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="eduford_img/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Our Certificate & Online Programs For 2021</h1>
+</section>
+<!--blog page content-->
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="eduford_img/certificate.jpg" >
+            <h2>Our Certificate & Online Programs For 2021</h2>
+            <p>Lorem Ipsum dolor sit amet, consectetur adipiscing 
+                elit, sed do eiusmod tempor incididunt ut labore 
+                et dolore magna aliqua.
+                Ut enim ad minim veniam, quis ...</p>
+                <br>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                     when an unknown printer took a galley of type and scrambled it to make a type specimen 
+                     book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
+                      sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                     like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                     <br>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          Fusce eleifend eros a augue feugiat tempor. Phasellus ullamcorper
+                           ultrices quam, at blandit leo vestibulum placerat. Cras at eros 
+                           auctor ligula feugiat consectetur. Maecenas porttitor facilisis 
+                           elit posuere fringilla. Proin venenatis placerat pellentesque. 
+                           Nullam libero dui, aliquam at lacus id, sodales mollis velit.
+                            Pellentesque ac libero ut dui ornare feugiat. Suspendisse fringilla
+                             euismod vulputate. Suspendisse rhoncus lectus id risus aliquam tincidunt. 
+                             Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                              cubilia curae; Cras pharetra enim quis vestibulum rutrum. Duis metus tortor,
+                               lobortis et orci eu, porta sollicitudin libero. 
+                         Etiam sollicitudin consectetur erat quis porta.</p>
+                         <br>
+                         <p>Praesent tempor nunc at sem elementum, vitae porta orci 
+                             condimentum. In consequat blandit ipsum vel maximus. 
+                             Suspendisse potenti. Fusce feugiat, magna quis molestie tincidunt,
+                              ex augue euismod massa, non dapibus sapien arcu quis lectus. 
+                              Vivamus congue augue libero, non elementum nulla convallis sit amet.
+                               Proin dapibus commodo leo nec consectetur. Interdum et malesuada fames 
+                               ac ante ipsum primis in faucibus. Nunc ac pharetra tortor, sit amet 
+                               auctor nunc. Nam posuere diam quis tortor accumsan eleifend.
+                                Donec bibendum blandit nisl, hendrerit pretium mauris tempus in. 
+                             Vivamus egestas consectetur cursus.</p>
+                             <div class="comment-box">
+                                 <h3>
+                                   Leave a comment
+                                 </h3>
+                                 <form class="comment-form">
+                                     <input type="text" placeholder="Enter Name">
+                                     <input type="email" placeholder="Enter Email">
+                                    <textarea rows="5" placeholder="Your comment"></textarea>
+                                     <button type="submit" class="hero-btn red-btn">
+                                         POST COMMENT</button>
+
+                                 </form>
+                             </div>
+        </div>
+
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+
+            <div>
+                <span>Data Science</span>
+                <span>28</span>
+            </div>
+
+            <div>
+                <span>Machine Learning</span>
+                <span>15</span>
+            </div>
+
+            <div>
+                <span>Computer Science</span>
+                <span>34</span>
+            </div>
+
+            <div>
+                <span>AutoCAD</span>
+                <span>34</span>
+            </div>
+
+            <div>
+                <span>Jouenalism</span>
+                <span>22</span>
+            </div>
+
+            <div>
+                <span>Commerce</span>
+                <span>30</span>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-----footer-->
+<section class="footer">
+    <h4>About us</h4>
+    <p>We are one of the largest, most diverse universities in the UK 
+        with over 120,000 students in London,<br> and a further 50,000
+        studying across 190 countries for a University of London degree.
+    </p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkdin"></i>
+
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> easy totorials</p>
+</section>
+
+ <!---java script for toggle menu    --->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+    </body>
+</html>
+    
